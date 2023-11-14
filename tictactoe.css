@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #233c56;
+}
+body {
+  font-family: sans-serif;
+}
+:root {
+  --bg-color: #212529;
+  --border-color: #666;
+  --font-color: #f1f5f9;
+  --primary-color: #4dff91;
+  --error-color: #ff0043;
+}
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 1.5rem 2.5rem;
+  position: relative;
+}
+
+#jogo {
+  background-color: #232323;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+}
+
+#jogo span {
+  /* background-color: rgb(137, 40, 40); */
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+#jogo span.win {
+  background-color: rgb(17, 145, 17);
+}
+
+h1,
+h2,
+span,
+label,
+input,
+button {
+  color: white;
+}
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
