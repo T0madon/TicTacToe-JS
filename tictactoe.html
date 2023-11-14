@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ticatactoe.css" />
+    <script src="tictactoe.js" defer></script>
+  </head>
+  <body>
+    <main id="main">
+      <header class="flex align-center justify-between">
+        <h1>Tic Tac Toe</h1>
+        <button id="themeSwitcher">Switch Theme Dark/Light</button>
+      </header>
+
+      <div class="dados flex align-center justify-between">
+        <label for="player1">Player 1 (X)</label>
+        <input type="text" id="player1" name="names" />
+        <br />
+        <label for="player2">Player 2 (O)</label>
+        <input type="text" id="player2" name="names" />
+      </div>
+      <button id="begin">Começar</button>
+      <h2>
+        Vez de:
+        <span id="turnPlayer"></span>
+      </h2>
+
+      <div id="jogo">
+        <span data-region="0.0"></span>
+        <span data-region="0.1"></span>
+        <span data-region="0.2"></span>
+        <span data-region="1.0"></span>
+        <span data-region="1.1"></span>
+        <span data-region="1.2"></span>
+        <span data-region="2.0"></span>
+        <span data-region="2.1"></span>
+        <span data-region="2.2"></span>
+      </div>
+    </main>
+  </body>
+</html>
